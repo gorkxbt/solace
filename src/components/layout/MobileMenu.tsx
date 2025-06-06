@@ -147,12 +147,12 @@ export default function MobileMenu({ isMenuOpen, setIsMenuOpen }: MobileMenuProp
                   className="mt-8"
                 >
                   <Link
-                    href="/framework"
+                    href="/terminal"
                     onClick={() => setIsMenuOpen(false)}
                     className="btn-tech w-full justify-center"
                   >
                     <Terminal className="w-5 h-5 mr-2" />
-                    INIT PROTOCOL
+                    VIEW TERMINAL
                   </Link>
                 </motion.div>
               </div>

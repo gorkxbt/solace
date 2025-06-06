@@ -1,10 +1,9 @@
 import { 
+  Home,
+  Info,
   Terminal,
-  Code2,
-  Database,
   Github,
-  Twitter,
-  MessageCircle
+  Twitter
 } from 'lucide-react'
 
 // Navigation items
@@ -12,20 +11,20 @@ export const NAV_ITEMS = [
   { 
     href: '/', 
     label: 'Home', 
+    icon: Home, 
+    description: 'Landing page' 
+  },
+  { 
+    href: '/info', 
+    label: 'Info', 
+    icon: Info, 
+    description: 'Protocol docs' 
+  },
+  { 
+    href: '/terminal', 
+    label: 'Terminal', 
     icon: Terminal, 
-    description: 'Neural hub' 
-  },
-  { 
-    href: '/framework', 
-    label: 'Framework', 
-    icon: Code2, 
-    description: 'Dev platform' 
-  },
-  { 
-    href: '/docs', 
-    label: 'Docs', 
-    icon: Database, 
-    description: 'Knowledge base' 
+    description: 'ACP Smart Contracts' 
   },
 ] as const
 
@@ -41,12 +40,6 @@ export const SOCIAL_ITEMS = [
     href: 'https://twitter.com/solaceprotocol', 
     icon: Twitter, 
     label: 'Twitter',
-    color: 'hover:text-yellow-400'
-  },
-  { 
-    href: 'https://discord.gg/solaceprotocol', 
-    icon: MessageCircle, 
-    label: 'Discord',
     color: 'hover:text-yellow-400'
   },
 ] as const 

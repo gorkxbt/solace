@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { 
   Github, 
   Twitter, 
-  MessageCircle, 
   Zap,
   Terminal,
   ArrowRight
@@ -16,13 +15,12 @@ const Footer = () => {
   const socialLinks = [
     { icon: Twitter, href: 'https://twitter.com/solaceprotocol', label: 'Twitter' },
     { icon: Github, href: 'https://github.com/solaceprotocol', label: 'GitHub' },
-    { icon: MessageCircle, href: 'https://discord.gg/solaceprotocol', label: 'Discord' },
   ]
 
   const quickLinks = [
-    { name: 'Framework', href: '/framework' },
-    { name: 'Docs', href: '/docs' },
-    { name: 'About', href: '/about' },
+    { name: 'Home', href: '/' },
+    { name: 'Info', href: '/info' },
+    { name: 'Terminal', href: '/terminal' },
   ]
 
   return (
@@ -85,11 +83,11 @@ const Footer = () => {
             </div>
             
             <Link
-              href="/framework"
+              href="/terminal"
               className="inline-flex items-center space-x-2 px-4 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-300 transition-colors text-sm font-semibold"
             >
               <Terminal className="w-4 h-4" />
-              <span>START BUILDING</span>
+              <span>VIEW TERMINAL</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -98,7 +96,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-yellow-500/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm font-mono">
-            © 2024 Solace Protocol
+            © 2025 Solace Protocol
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
